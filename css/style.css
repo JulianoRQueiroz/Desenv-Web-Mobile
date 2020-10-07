@@ -22,13 +22,13 @@ h1 {
     line-height: 2rem;
     text-align: center;
     background-color: rgba(0,0,0,.8);
-    margin: auto;
-    padding: 5px;
     max-width: 700px;
-    align-self: end;
-    margin-top: 300px;
-    min-height: auto;
     box-sizing: border-box;
+    /* display: flex;  */
+    position: relative;
+    top: -65px; 
+    margin: 0 auto; 
+    flex: 0 1 auto;
 }
 
 h2 {
@@ -83,15 +83,14 @@ img {
 
 /* Banner Full */
 .full-banner {
-    background-image: url(../images/banner.jpg);
-    background-size: 100% 100%;
+    /* background-image: url(../images/banner.jpg); */
+    background-size: 100% 100%; 
     background-repeat: no-repeat; 
-    background-color: #FF0000 ;
     position: relative;
-    display: flex;
-    padding: auto;
-    margin: auto;
-    background-position: 100%;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    float: none;
 }
 
 .galeria {
@@ -107,6 +106,14 @@ img {
     flex: 1 1 200px;
 }
 
+section {
+    margin-top: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 30%;
+    min-height: 30%;
+    display: flex;
+}
 
 footer {
     background-color: #222;
